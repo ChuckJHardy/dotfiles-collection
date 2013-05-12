@@ -1,0 +1,49 @@
+# Unix
+alias tlf="tail -f"
+alias ln='ln -v'
+alias mkdir='mkdir -p'
+alias ...='../..'
+alias l='ls'
+alias ll='ls -al'
+alias lh='ls -Alh'
+alias -g G='| grep'
+alias -g M='| less'
+alias -g L='| wc -l'
+alias -g ONE="| awk '{ print \$1}'"
+alias e="$EDITOR"
+alias v="$VISUAL"
+
+# git
+alias gci="git pull --rebase && rake && git push"
+
+# Bundler
+alias b="bundle"
+alias be="bundle exec"
+
+# Tests and Specs
+alias t="ruby -I test"
+alias cuc="bundle exec cucumber"
+
+# Rubygems
+alias gi="gem install"
+alias giv="gem install -v"
+
+# Rails
+alias cap="bundle exec cap"
+alias migrate="rake db:migrate && rake db:rollback && rake db:migrate && rake db:test:prepare"
+alias m="migrate"
+alias rk="rake"
+alias s="bundle exec rspec"
+alias z="zeus"
+
+# Browser
+alias gchrome="open -a 'Google Chrome' --args --allow-file-access-from-files"
+
+# ZSH
+alias zshcheat="open 'https://github.com/robbyrussell/oh-my-zsh/wiki/Cheatsheet'"
+
+# Server
+alias rn='sudo nginx -s stop; sudo nginx'
+
+# Logs
+alias alllogs="tail -f log/development.log log/unicorn.log log/test.log /var/log/otbeach.log /var/log/apache2/access_log /var/log/apache2/error_log | egrep --color -E 'Parameters:|GET|PUT|DELETE|200|error|ERROR|==>|<==|$'"
