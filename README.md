@@ -2,7 +2,7 @@
     
 #### Usage
 
-    git clone git@github.com:ChuckJHardy/Vim.git ~/.dotfiles
+    git clone git@github.com:ChuckJHardy/DotFiles.git ~/.dotfiles
     cd ~/.dotfiles; rake
 
 #### Get Mountain Lion Ready
