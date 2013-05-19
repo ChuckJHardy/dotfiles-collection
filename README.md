@@ -4,6 +4,9 @@
 
     git clone git@github.com:ChuckJHardy/DotFiles.git ~/.dotfiles
     cd ~/.dotfiles; rake
+    
+    # If you want the oh-my-zsh theme
+    ln -s ~/.dotfiles/chuckjhardy.zsh-theme ~/.oh-my-zsh/themes/chuckjhardy.zsh-theme
 
 #### Get Mountain Lion Ready
 
