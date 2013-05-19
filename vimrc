@@ -53,8 +53,7 @@ syntax enable
 "highlight SignColumn guibg=#272822
 set term=xterm-256color
 set background=dark
-color Tomorrow-Night
-" colorscheme solarized
+colorscheme solarized
 
 " " Vim Colors - http://choorucode.wordpress.com/2011/07/29/vim-chart-of-color-names/
 " " http://vim.wikia.com/wiki/Xterm256_color_names_for_console_Vim
