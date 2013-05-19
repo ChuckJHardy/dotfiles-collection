@@ -14,11 +14,21 @@
   pr = !hub pull-request
   rebase-origin = !git fetch origin && git rebase origin/master
   st = status
+  score = shortlog --numbered --summary --no-merges
+  graph = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(blue)<%an>%Creset' --abbrev-commit --date=relative
 [core]
   excludesfile = ~/.gitignore
   autocrlf = input
 [merge]
   ff = only
+[push]
+  default = tracking
+[rerere]
+  enabled = true
+[format]
+  pretty = %Cblue%h%Creset %Cgreen[%ar]%Creset (%an) %s
 [user]
   name = Chuck J hardy
   email = chuckjhardy@gmail.com
+[github]
+  user = ChuckJHardy

@@ -1,17 +1,29 @@
-#### WIP
+## DotFiles
+    
+#### Usage
 
-Help guide with installing Mountain Lion
-http://robots.thoughtbot.com/post/27985816073/the-hitchhikers-guide-to-riding-a-mountain-lion
+    git clone git@github.com:ChuckJHardy/Vim.git ~/.dotfiles
+    cd ~/.dotfiles; rake
 
-brew install zsh wget curl ag ctags-exuberant
-Download and install http://xquartz.macosforge.org/landing/
+#### Get Mountain Lion Ready
 
-wget --no-check-certificate https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
-brew install macvim --override-system-vim --with-features=huge --enable-rubyinterp
-git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+[Help guide with installing Mountain Lion](http://robots.thoughtbot.com/post/27985816073/the-hitchhikers-guide-to-riding-a-mountain-lion)
 
-brew tap homebrew/dupes
-brew install apple-gcc42
-sudo ln -s /usr/local/bin/gcc-4.2 /usr/bin/gcc-4.2
+Get X11
 
-\curl -L https://get.rvm.io | bash -s stable --autolibs=3 --ruby
+    Download and install http://xquartz.macosforge.org/landing/
+    
+Get the Brew packages
+
+    brew install zsh wget curl ag ctags-exuberant
+    brew install macvim --override-system-vim --with-features=huge --enable-rubyinterp
+    
+Get Oh-My-Zsh
+
+    wget --no-check-certificate https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
+    
+Update Apple GCC
+
+    brew tap homebrew/dupes
+    brew install apple-gcc42
+    sudo ln -s /usr/local/bin/gcc-4.2 /usr/bin/gcc-4.2

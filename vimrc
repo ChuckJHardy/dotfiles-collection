@@ -12,7 +12,8 @@ if executable('/bin/zsh')
   set shell=/bin/zsh
 endif
 
-" Declare bundles are handled via Vundle
+set nocompatible
+
 filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
@@ -43,6 +44,9 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'benmills/vimux'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'tpope/vim-bundler'
+Bundle 'mhinz/vim-signify'
+Bundle 'b4winckler/vim-objc'
+Bundle 'Lokaltog/vim-easymotion'
 
 filetype plugin on
 filetype indent on
@@ -53,7 +57,12 @@ syntax enable
 "highlight SignColumn guibg=#272822
 set term=xterm-256color
 set background=dark
-colorscheme solarized
+
+try
+  colorscheme solarized
+catch /^Vim\%((\a\+)\)\=:E185/
+  " deal with it
+endtry
 
 " " Vim Colors - http://choorucode.wordpress.com/2011/07/29/vim-chart-of-color-names/
 " " http://vim.wikia.com/wiki/Xterm256_color_names_for_console_Vim

@@ -2,6 +2,12 @@ ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="chuckjhardy"
 export EDITOR=/usr/local/Cellar/macvim/7.3-66/bin/vim
 
+export RUBY_HEAP_MIN_SLOTS=1000000
+export RUBY_HEAP_SLOTS_INCREMENT=1000000
+export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
+export RUBY_GC_MALLOC_LIMIT=100000000
+export RUBY_HEAP_FREE_MIN=500000
+
 # XCode
 export CC=/usr/local/bin/gcc-4.2
 
@@ -10,7 +16,7 @@ if [ -e "$HOME/.aliases" ]; then
   source "$HOME/.aliases"
 fi
 
-plugins=(git bundler ssh-agent)
+plugins=(git bundler osx ruby rails rails3 brew cap gem rake ssh-agent)
 
 source $ZSH/oh-my-zsh.sh
 unsetopt correct_all

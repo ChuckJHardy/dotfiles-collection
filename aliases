@@ -1,3 +1,5 @@
+alias mee='ssh -p 22 deployer@198.199.105.68'
+
 # Unix
 alias tlf="tail -f"
 alias ln='ln -v'
