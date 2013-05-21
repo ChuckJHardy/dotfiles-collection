@@ -41,12 +41,7 @@ Bundle 'tpope/vim-rails'
 Bundle 'ervandew/supertab'
 Bundle 'othree/html5.vim'
 Bundle 'kchmck/vim-coffee-script'
-Bundle 'benmills/vimux'
 Bundle 'altercation/vim-colors-solarized'
-Bundle 'tpope/vim-bundler'
-Bundle 'mhinz/vim-signify'
-Bundle 'b4winckler/vim-objc'
-Bundle 'Lokaltog/vim-easymotion'
 
 filetype plugin on
 filetype indent on
