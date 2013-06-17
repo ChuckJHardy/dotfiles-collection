@@ -2,8 +2,8 @@ domain: local-otb.uk
 fallback_domain: sandbox1-otb.com
 int_domain: local-otb
 rails_env: development
-db_user: otb
-db_password: OtbOtb
+db_user: # ADD
+db_password: # ADD
 db_naming: default
 nginx_path: /usr/local/etc/nginx
 apache_path: /etc/apache2

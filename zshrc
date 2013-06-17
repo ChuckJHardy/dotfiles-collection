@@ -16,6 +16,10 @@ if [ -e "$HOME/.aliases" ]; then
   source "$HOME/.aliases"
 fi
 
+if [ -e "$HOME/.aliases_local" ]; then
+  source "$HOME/.aliases_local"
+fi
+
 plugins=(git bundler osx ruby rails rails3 brew cap gem rake ssh-agent)
 
 source $ZSH/oh-my-zsh.sh
