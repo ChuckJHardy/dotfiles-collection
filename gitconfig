@@ -20,8 +20,6 @@
 [core]
   excludesfile = ~/.gitignore
   autocrlf = input
-[merge]
-  ff = only
 [push]
   default = tracking
 [rerere]

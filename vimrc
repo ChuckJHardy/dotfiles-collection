@@ -1,11 +1,3 @@
-" Author: 
-"    ChuckJHardy <chuckjhardy@gmail.com>
-"
-" Version: 
-"    1.0 - 05/03/13
-"
-" Ctrl XO for OmniComplete
-
 let mapleader = ","
 
 if executable('/bin/zsh')
@@ -47,39 +39,14 @@ filetype plugin on
 filetype indent on
 syntax enable
 
-"let g:molokai_original=1
-"colorscheme molokai
-"highlight SignColumn guibg=#272822
 set term=xterm-256color
 set background=dark
 
 try
-  colorscheme solarized
+  " colorscheme solarized
+  colorscheme tomorrow-night
 catch /^Vim\%((\a\+)\)\=:E185/
-  " deal with it
 endtry
-
-" " Vim Colors - http://choorucode.wordpress.com/2011/07/29/vim-chart-of-color-names/
-" " http://vim.wikia.com/wiki/Xterm256_color_names_for_console_Vim
-highlight ColorColumn guibg=#af0000 ctermbg=124
-highlight NonText guifg=#7A7A90
-highlight SpecialKey guifg=#7A7A90
-
-" Set extra options when running in GUI mode
-if has("gui_running")
-    macmenu Window.Toggle\ Full\ Screen\ Mode key=<nop>
-    set fuoptions=maxhorz,maxvert
-    set guioptions-=T
-    set guioptions-=l
-    set guioptions-=e
-    set guioptions-=L
-    set guioptions-=r
-    set guioptions-=R
-    set guioptions-=m
-    set guifont=Monaco:h12
-    set guitablabel=%M\ %t
-    set t_Co=256
-endif
 
 set encoding=utf8                                                              " Set utf8 as standard encoding and en_US as the standard language
 set ffs=unix,dos,mac                                                           " Use Unix as the standard file type
@@ -152,15 +119,6 @@ set magic                                                                      "
 set hlsearch                                                                   " Highlight search results
 set incsearch                                                                  " Makes search act like search in modern browsers 
 
-autocmd FileType python set omnifunc=pythoncomplete#Complete
-autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
-autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
-autocmd FileType css set omnifunc=csscomplete#CompleteCSS
-autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
-autocmd FileType php set omnifunc=phpcomplete#CompletePHP
-autocmd FileType c set omnifunc=ccomplete#Complete
-autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete 
-
 map <silent> <leader><cr> :noh<cr>
 map <leader>pp :setlocal paste!<cr>
 map <leader>ff :Ag<space>""<left>
@@ -220,7 +178,7 @@ map <leader>] :tabn<cr>
 map <leader>[ :tabp<cr>
 map <leader>te :tabedit <c-r>=expand("%:p:h")<cr>/
 
-map <leader>gg :topleft 100 :split Gemfile<cr>
+map <leader>gg :topleft 40 :split Gemfile<cr>
 map <leader>e :e! ~/.vimrc<cr>
 
 map <leader>qq :qa!<cr>
