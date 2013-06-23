@@ -47,6 +47,8 @@ try
 catch /^Vim\%((\a\+)\)\=:E185/
 endtry
 
+let loaded_matchparen = 1                                                      " Try speed up vim
+
 set encoding=utf8                                                              " Set utf8 as standard encoding and en_US as the standard language
 set ffs=unix,dos,mac                                                           " Use Unix as the standard file type
 set autoread                                                                   " Set to auto read when a file is changed from the outside
