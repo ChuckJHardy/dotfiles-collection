@@ -4,8 +4,6 @@ if executable('/bin/zsh')
   set shell=/bin/zsh
 endif
 
-set nocompatible
-
 filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
@@ -37,9 +35,17 @@ set hlsearch
 set colorcolumn=80
 set splitright
 set splitbelow
+set smartindent
+set clipboard=unnamed
+set mouse=a
+set mousehide
+set shiftwidth=2
+set tabstop=2
 
 map <leader>s :%s/\s\+$//<CR>
 map <leader>ff :Ag<space>""<left>
+map <leader>§ :%s/:\([^ ]*\)\(\s*\)=>/\1:/g<cr>
+map <silent> <leader><cr> :noh<cr>
 
 map <F5> :BD<CR>
 map <F6> :bd<CR>
@@ -49,15 +55,38 @@ map <leader>. :A<cr>
 map <leader>/ :vs<cr>,.
 map <leader>? :hs<cr>,.
 
+" Useful mappings for managing tabs
+map <leader>tn :tabnew<cr>
+map <leader>] :tabn<cr>
+map <leader>[ :tabp<cr>
+
+" Smart way to move between windows
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
+
 " Vim Hardcore
 map <Left> :echo "Try H!"<cr>
 map <Right> :echo "Try L!"<cr>
 map <Up> :echo "Try K!"<cr>
 map <Down> :echo "Try J!"<cr>
-inoremap <Left> <nop>
-inoremap <Right> <nop>
-inoremap <Up> <nop>
-inoremap <Down> <nop>
+
+nnoremap <leader>gd :Gdiff<cr>
+nnoremap <leader>gs :Gstatus<cr>
+nnoremap <leader>gb :Gblame<cr>
+
+if has("autocmd")
+  au FileType make set noexpandtab
+  au BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn,txt} setf markdown
+  au BufNewFile,BufRead *.json set ft=javascript
+
+  augroup RubyShenanigans
+    au!
+    autocmd BufRead,BufNewFile Gemfile,Rakefile,Capfile
+      \ set filetype=ruby
+  augroup END
+endif
 
 let g:Powerline_symbols = 'fancy'
 let g:ctrlp_map = '<c-p>'
