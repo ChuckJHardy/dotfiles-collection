@@ -43,8 +43,7 @@ set term=xterm-256color
 set background=dark
 
 try
-  " colorscheme solarized
-  colorscheme tomorrow-night
+  colorscheme solarized
 catch /^Vim\%((\a\+)\)\=:E185/
 endtry
 
