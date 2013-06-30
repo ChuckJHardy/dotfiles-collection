@@ -20,6 +20,8 @@ Bundle 'epmatsw/ag.vim'
 Bundle 'skalnik/vim-vroom'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-rails'
+Bundle 'scrooloose/nerdtree'
+Bundle 'ervandew/supertab'
 Bundle 'altercation/vim-colors-solarized'
 
 set term=xterm-256color
@@ -88,9 +90,24 @@ if has("autocmd")
   augroup END
 endif
 
+let g:ctrlp_dont_split = 'NERD_tree_2'
+let g:ctrlp_match_window_bottom = 0
 let g:Powerline_symbols = 'fancy'
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_show_hidden = 1
 let g:ctrlp_mruf_max = 250
 nnoremap <c-b> :CtrlPBuffer<cr>
 nnoremap <c-f> :CtrlPMRU<cr>
+
+noremap  <F2> :NERDTreeToggle<cr>
+inoremap <F2> <esc>:NERDTreeToggle<cr>
+map :where :NERDTreeFind<cr>
+au Filetype nerdtree setlocal nolist
+let g:NERDTreeWinPos = "left"
+let g:NERDTreeAutoDeleteBuffer = 1
+let NERDTreeHighlightCursorline=1
+let NERDTreeHijackNetrw=1
+let NERDTreeMinimalUI = 1
+let NERDTreeDirArrows = 1
+let NERDTreeMouseMode = 1
+let NERDTreeIgnore = ['.vim$', '\~$', '.*\.pyc$', 'pip-log\.txt$', 'whoosh_index', 'xapian_index', '.*.pid', 'monitor.py', '.*-fixtures-.*.json', '.*\.o$', 'db.db', 'tags.bak', 'tags']
