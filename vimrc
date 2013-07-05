@@ -33,6 +33,7 @@ catch /^Vim\%((\a\+)\)\=:E185/
 endtry
 
 set number
+set expandtab
 set hlsearch
 set colorcolumn=80
 set splitright
