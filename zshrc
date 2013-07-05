@@ -10,6 +10,7 @@ export RUBY_HEAP_FREE_MIN=500000
 
 # XCode
 export CC=/usr/local/bin/gcc-4.2
+export CPPFLAGS=-I/opt/X11/include
 
 # Aliases
 if [ -e "$HOME/.aliases" ]; then
