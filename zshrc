@@ -21,7 +21,7 @@ if [ -e "$HOME/.aliases_local" ]; then
   source "$HOME/.aliases_local"
 fi
 
-plugins=(git bundler osx ruby rails rails3 brew cap gem rake ssh-agent)
+plugins=(git bundler osx ruby rails rails3 rails4 brew cap gem rake ssh-agent nvm nvm-zsh)
 
 source $ZSH/oh-my-zsh.sh
 unsetopt correct_all
@@ -35,5 +35,9 @@ export PATH="$PATH:$OnTheBeach/unicorns"
 source $HOME/otb.sh
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+[[ -s "$HOME/.nvm/nvm.sh" ]] && . "$HOME/.nvm/nvm.sh"
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"

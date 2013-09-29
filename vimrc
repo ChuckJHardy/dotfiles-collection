@@ -11,7 +11,6 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'vim-scripts/bufkill.vim'
 Bundle 'kien/ctrlp.vim'
-Bundle 'Lokaltog/vim-powerline'
 Bundle 'othree/html5.vim'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-commentary'
@@ -23,6 +22,10 @@ Bundle 'tpope/vim-rails'
 Bundle 'scrooloose/nerdtree'
 Bundle 'ervandew/supertab'
 Bundle 'altercation/vim-colors-solarized'
+Bundle 'nono/vim-handlebars'
+Bundle 'Shutnik/jshint2.vim'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'elzr/vim-json'
 
 set term=xterm-256color
 set background=dark
@@ -44,6 +47,7 @@ set mouse=a
 set mousehide
 set shiftwidth=2
 set tabstop=2
+set noerrorbells visualbell t_vb=
 
 map <leader>s :%s/\s\+$//<CR>
 map <leader>ff :Ag<space>""<left>
@@ -70,10 +74,10 @@ map <C-h> <C-W>h
 map <C-l> <C-W>l
 
 " Vim Hardcore
-map <Left> :echo "Try H!"<cr>
-map <Right> :echo "Try L!"<cr>
-map <Up> :echo "Try K!"<cr>
-map <Down> :echo "Try J!"<cr>
+" map <Left> :echo "Try H!"<cr>
+" map <Right> :echo "Try L!"<cr>
+" map <Up> :echo "Try K!"<cr>
+" map <Down> :echo "Try J!"<cr>
 
 nnoremap <leader>gd :Gdiff<cr>
 nnoremap <leader>gs :Gstatus<cr>
@@ -91,9 +95,15 @@ if has("autocmd")
   augroup END
 endif
 
+" Specify the behavior when switching between buffers 
+try
+  set switchbuf=useopen,usetab,newtab
+  set stal=2
+catch
+endtry
+
 let g:ctrlp_dont_split = 'NERD_tree_2'
 let g:ctrlp_match_window_bottom = 0
-let g:Powerline_symbols = 'fancy'
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_show_hidden = 1
 let g:ctrlp_mruf_max = 250
@@ -106,9 +116,11 @@ map :where :NERDTreeFind<cr>
 au Filetype nerdtree setlocal nolist
 let g:NERDTreeWinPos = "left"
 let g:NERDTreeAutoDeleteBuffer = 1
-let NERDTreeHighlightCursorline=1
-let NERDTreeHijackNetrw=1
+let NERDTreeHighlightCursorline= 1
+let NERDTreeHijackNetrw= 1
 let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
 let NERDTreeMouseMode = 1
 let NERDTreeIgnore = ['.vim$', '\~$', '.*\.pyc$', 'pip-log\.txt$', 'whoosh_index', 'xapian_index', '.*.pid', 'monitor.py', '.*-fixtures-.*.json', '.*\.o$', 'db.db', 'tags.bak', 'tags']
+
+let jshint2_save = 1

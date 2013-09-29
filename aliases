@@ -28,6 +28,10 @@ alias cuc="bundle exec cucumber"
 alias gi="gem install"
 alias giv="gem install -v"
 
+# Tmux
+alias tmux="TERM=screen-256color-bce tmux"
+alias t='tmux'
+
 # Rails
 alias cap="bundle exec cap"
 alias migrate="rake db:migrate && rake db:rollback && rake db:migrate && rake db:test:prepare"
@@ -43,7 +47,7 @@ alias gchrome="open -a 'Google Chrome' --args --allow-file-access-from-files"
 alias zshcheat="open 'https://github.com/robbyrussell/oh-my-zsh/wiki/Cheatsheet'"
 
 # Server
-alias rn='sudo nginx -s stop; sudo nginx'
+alias rsn='sudo nginx -s stop; sudo nginx'
 
 # Logs
 alias alllogs="tail -f log/development.log log/unicorn.log log/test.log /var/log/otbeach.log /var/log/apache2/access_log /var/log/apache2/error_log | egrep --color -E 'Parameters:|GET|PUT|DELETE|200|error|ERROR|==>|<==|$'"
