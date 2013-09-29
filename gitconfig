@@ -17,13 +17,14 @@
   st = status
   score = shortlog --numbered --summary --no-merges
   graph = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(blue)<%an>%Creset' --abbrev-commit --date=relative
+  pretty = log --oneline --graph --decorate --all 
 [core]
   excludesfile = ~/.gitignore
   autocrlf = input
 [push]
   default = tracking
 [rerere]
-  enabled = true
+	enabled = false
 [format]
   pretty = %Cblue%h%Creset %Cgreen[%ar]%Creset (%an) %s
 [user]
