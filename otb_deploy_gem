@@ -8,3 +8,5 @@ db_naming: default
 nginx_path: /usr/local/etc/nginx
 apache_path: /etc/apache2
 deploy_to: /Users/ChuckJHardy/Code/247
+cr_api_key: 91ssgvuosuSQpZzuze1G
+cr_app: local-otb.uk
