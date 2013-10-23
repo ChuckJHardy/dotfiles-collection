@@ -1,6 +1,6 @@
 ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="chuckjhardy"
-export EDITOR=/usr/local/Cellar/macvim/7.3-66/bin/vim
+export EDITOR=/usr/local/Cellar/macvim/7.4-71/bin/vim
 
 export RUBY_HEAP_MIN_SLOTS=1000000
 export RUBY_HEAP_SLOTS_INCREMENT=1000000
