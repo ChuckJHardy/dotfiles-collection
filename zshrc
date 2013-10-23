@@ -34,6 +34,8 @@ export OnTheBeach="$HOME/Code/247"
 export PATH="$PATH:$OnTheBeach/unicorns"
 source $HOME/otb.sh
 
+export MY_SANDBOX=sandbox2
+
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 [[ -s "$HOME/.nvm/nvm.sh" ]] && . "$HOME/.nvm/nvm.sh"
 

@@ -26,6 +26,7 @@ Bundle 'nono/vim-handlebars'
 Bundle 'Shutnik/jshint2.vim'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'elzr/vim-json'
+Bundle 'mattboehm/vim-unstack'
 
 set term=xterm-256color
 set background=dark
