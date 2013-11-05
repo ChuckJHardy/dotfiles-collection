@@ -75,10 +75,10 @@ map <C-h> <C-W>h
 map <C-l> <C-W>l
 
 " Vim Hardcore
-" map <Left> :echo "Try H!"<cr>
-" map <Right> :echo "Try L!"<cr>
-" map <Up> :echo "Try K!"<cr>
-" map <Down> :echo "Try J!"<cr>
+map <Left> :echo "Try H!"<cr>
+map <Right> :echo "Try L!"<cr>
+map <Up> :echo "Try K!"<cr>
+map <Down> :echo "Try J!"<cr>
 
 nnoremap <leader>gd :Gdiff<cr>
 nnoremap <leader>gs :Gstatus<cr>

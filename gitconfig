@@ -30,7 +30,7 @@
 [format]
   pretty = %Cblue%h%Creset %Cgreen[%ar]%Creset (%an) %s
 [user]
-  name = Chuck J hardy
-  email = chuckjhardy@gmail.com
+	name = Chuck J hardy
+	email = chuckjhardy@gmail.com
 [github]
   user = ChuckJHardy
