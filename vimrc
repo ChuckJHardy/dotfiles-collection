@@ -16,41 +16,42 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-commentary'
 Bundle 'tpope/vim-sensible'
 Bundle 'epmatsw/ag.vim'
-Bundle 'skalnik/vim-vroom'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-rails'
-Bundle 'scrooloose/nerdtree'
 Bundle 'ervandew/supertab'
-Bundle 'altercation/vim-colors-solarized'
 Bundle 'nono/vim-handlebars'
 Bundle 'Shutnik/jshint2.vim'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'elzr/vim-json'
-Bundle 'mattboehm/vim-unstack'
+Bundle 'scrooloose/syntastic'
+Bundle 'scrooloose/nerdtree'
+Bundle 'skalnik/vim-vroom'
 
+set shell=/bin/sh
 set term=xterm-256color
 set background=dark
 
-try
-  colorscheme solarized
-catch /^Vim\%((\a\+)\)\=:E185/
-endtry
+hi StatusLineNC cterm=NONE ctermfg=1
+hi StatusLine cterm=NONE ctermfg=2
+hi TabLine cterm=NONE ctermbg=NONE ctermfg=1 gui=NONE
+hi TabLineFill cterm=NONE ctermbg=NONE ctermfg=1 gui=NONE
+hi TabLineSel ctermfg=2
+hi VertSplit cterm=NONE ctermfg=2 gui=NONE
 
 set number
 set expandtab
 set hlsearch
-set colorcolumn=80
 set splitright
 set splitbelow
 set smartindent
-set clipboard=unnamed
 set mouse=a
 set mousehide
 set shiftwidth=2
 set tabstop=2
 set noerrorbells visualbell t_vb=
+set colorcolumn=80
 
-map <leader>s :%s/\s\+$//<CR>
+map <leader>, :%s/\s\+$//<CR>
 map <leader>ff :Ag<space>""<left>
 map <leader>§ :%s/:\([^ ]*\)\(\s*\)=>/\1:/g<cr>
 map <silent> <leader><cr> :noh<cr>

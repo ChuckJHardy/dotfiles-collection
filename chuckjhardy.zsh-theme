@@ -15,6 +15,7 @@ $(git_prompt_info) \
 $FG[105]%(!.#.»)%{$reset_color%} '
 PROMPT2='%{$fg[red]%}\ %{$reset_color%}'
 RPS1='${return_code}'
+# PROMPT='$(git_time_since_commit) $FG[032]%~ $FG[105]%(!.#.»)%{$reset_color%} '
 
 # color vars
 eval my_gray='$FG[237]'
