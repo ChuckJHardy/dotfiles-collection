@@ -21,7 +21,7 @@ if [ -e "$HOME/.aliases_local" ]; then
   source "$HOME/.aliases_local"
 fi
 
-plugins=(git bundler osx ruby rails rails3 rails4 brew cap gem rake ssh-agent nvm nvm-zsh)
+plugins=(git bundler osx ruby rails brew cap gem rake ssh-agent nvm nvm-zsh xcode tmuxinator tmux)
 
 source $ZSH/oh-my-zsh.sh
 unsetopt correct_all
