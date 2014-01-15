@@ -21,6 +21,10 @@ if [ -e "$HOME/.aliases_local" ]; then
   source "$HOME/.aliases_local"
 fi
 
+if [ -e "$HOME/.bin/tmuxinator.zsh" ]; then
+  source "$HOME/.bin/tmuxinator.zsh"
+fi
+
 # OnTheBeach Specific Files
 if [ -e "$HOME/.zsh_otb" ]; then
   source "$HOME/.zsh_otb"
