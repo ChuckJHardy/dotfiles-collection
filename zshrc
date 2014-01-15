@@ -21,20 +21,18 @@ if [ -e "$HOME/.aliases_local" ]; then
   source "$HOME/.aliases_local"
 fi
 
+# OnTheBeach Specific Files
+if [ -e "$HOME/.zsh_otb" ]; then
+  source "$HOME/.zsh_otb"
+fi
+
 plugins=(git bundler osx ruby rails brew cap gem rake ssh-agent nvm nvm-zsh xcode tmuxinator tmux)
 
 source $ZSH/oh-my-zsh.sh
 unsetopt correct_all
 
 # Customize to your needs...
-export PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin:/usr/X11/bin:/Users/ChuckJHardy/.rvm/bin:/usr/local/sbin:/usr/local/mysql/bin:/Users/ChuckJHardy/Code/247/unicorns:/usr/local/lib/node:/usr/local/share/npm/bin:$PATH"
-
-# OTB Navigator
-export OnTheBeach="$HOME/Code/247"
-export PATH="$PATH:$OnTheBeach/unicorns"
-source $HOME/otb.sh
-
-export MY_SANDBOX=sandbox2
+export PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin:/usr/X11/bin:/Users/ChuckJHardy/.rvm/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/lib/node:/usr/local/share/npm/bin:$PATH"
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 [[ -s "$HOME/.nvm/nvm.sh" ]] && . "$HOME/.nvm/nvm.sh"
