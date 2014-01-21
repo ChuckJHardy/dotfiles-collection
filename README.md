@@ -2,8 +2,9 @@
     
 #### Prerequisites
 
-    brew install zsh wget
-    brew install macvim --override-system-vim
+	# Install dependencies
+	brew bundle
+
     wget --no-check-certificate https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh; rm ~/.zshrc
 
 #### Installation
