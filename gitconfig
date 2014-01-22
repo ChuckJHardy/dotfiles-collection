@@ -34,3 +34,5 @@
 	email = chuckjhardy@gmail.com
 [github]
   user = ChuckJHardy
+[credential]
+	helper = osxkeychain
