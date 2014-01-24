@@ -30,7 +30,7 @@ if [ -e "$HOME/.zsh_otb" ]; then
   source "$HOME/.zsh_otb"
 fi
 
-plugins=(git bundler osx ruby rails brew cap gem rake ssh-agent nvm nvm-zsh xcode tmuxinator tmux)
+plugins=(git bundler osx ruby rails brew cap gem rake ssh-agent nvm nvm-zsh xcode tmuxinator tmux autojump)
 
 source $ZSH/oh-my-zsh.sh
 unsetopt correct_all
@@ -40,6 +40,7 @@ export PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/l
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 [[ -s "$HOME/.nvm/nvm.sh" ]] && . "$HOME/.nvm/nvm.sh"
+[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
