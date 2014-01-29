@@ -26,6 +26,7 @@ Bundle 'elzr/vim-json'
 Bundle 'scrooloose/syntastic'
 Bundle 'scrooloose/nerdtree'
 Bundle 'skalnik/vim-vroom'
+Bundle 'rodjek/vim-puppet'
 
 set shell=/bin/sh
 set term=xterm-256color
