@@ -36,3 +36,5 @@
   user = ChuckJHardy
 [credential]
 	helper = osxkeychain
+[commit]
+  template = ~/.gitmessage
