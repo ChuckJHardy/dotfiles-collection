@@ -1,7 +1,7 @@
 task :default => [:link]
 
 task :link do
-  %w[vim vimrc gvimrc gitmessage tmux.conf gemrc gitconfig aliases zshrc ackrc rtorrent.rc].each do |script|
+  %w[vim vimrc gvimrc ideavimrc gitmessage tmux.conf gemrc gitconfig aliases zshrc ackrc rtorrent.rc].each do |script|
     dotfile = File.join(ENV['HOME'], ".#{script}")
     if File.exist?(dotfile) || File.symlink?(dotfile)
       warn "~/.#{script} already exists"
