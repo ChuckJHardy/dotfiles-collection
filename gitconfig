@@ -30,10 +30,8 @@
 [format]
   pretty = %Cblue%h%Creset %Cgreen[%ar]%Creset (%an) %s
 [user]
-	name = Chuck J Hardy
+	name = Charles J Hardy
 	email = chuckjhardy@gmail.com
-[github]
-  user = ChuckJHardy
 [credential]
 	helper = osxkeychain
 [commit]

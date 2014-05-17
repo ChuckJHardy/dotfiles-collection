@@ -11,6 +11,5 @@ task :link do
   end
 
   `git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle`
-  `vim -u ~/.vimrc +BundleInstall +qa`
   `ln -s "$(brew --prefix)/Library/Contributions/brew_zsh_completion.zsh" /usr/local/share/zsh/site-functions`
 end
