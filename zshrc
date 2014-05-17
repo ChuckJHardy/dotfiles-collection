@@ -1,6 +1,21 @@
 ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="chuckjhardy"
-export EDITOR=/usr/local/Cellar/macvim/7.4-72/bin/vim
+
+# Uncomment the following line if you want to disable marking untracked files
+# under VCS as dirty. This makes repository status check for large repositories
+# much, much faster.
+# DISABLE_UNTRACKED_FILES_DIRTY="true"
+
+# Uncomment the following line if you want to change the command execution time
+# stamp shown in the history command output.
+# The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+HIST_STAMPS="dd.mm.yyyy"
+
+# Compilation flags
+export ARCHFLAGS="-arch x86_64"
+
+# ssh
+# export SSH_KEY_PATH="~/.ssh/dsa_id"
 
 export RUBY_GC_HEAP_INIT_SLOTS=1000000
 export RUBY_HEAP_SLOTS_INCREMENT=1000000
@@ -21,28 +36,24 @@ if [ -e "$HOME/.aliases_local" ]; then
   source "$HOME/.aliases_local"
 fi
 
-if [ -e "$HOME/.bin/tmuxinator.zsh" ]; then
-  source "$HOME/.bin/tmuxinator.zsh"
+# You may need to manually set your language environment
+export LANG=en_US.UTF-8
+
+# Preferred editor for local and remote sessions
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='vi'
+else
+  export EDITOR=/usr/local/Cellar/macvim/7.4-73/bin/vim
 fi
 
-# OnTheBeach Specific Files
-if [ -e "$HOME/.zsh_otb" ]; then
-  source "$HOME/.zsh_otb"
-fi
-
-plugins=(git bundler osx ruby rails brew cap gem rake ssh-agent nvm nvm-zsh xcode tmuxinator tmux autojump)
+plugins=(git bundler osx ruby rails brew cap gem rake ssh-agent xcode tmux)
 
 source $ZSH/oh-my-zsh.sh
 unsetopt correct_all
 
 # Customize to your needs...
-export PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin:/usr/X11/bin:/Users/ChuckJHardy/.rvm/bin:/usr/local/sbin:/usr/local/mysql/bin:/usr/local/lib/node:/usr/local/share/npm/bin:$PATH"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
-[[ -s "$HOME/.nvm/nvm.sh" ]] && . "$HOME/.nvm/nvm.sh"
-[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
