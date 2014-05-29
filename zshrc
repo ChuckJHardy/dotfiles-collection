@@ -23,6 +23,8 @@ export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
 export RUBY_GC_MALLOC_LIMIT=100000000
 export RUBY_HEAP_FREE_MIN=500000
 
+export EDITOR=/usr/local/Cellar/macvim/7.4-73/bin/vim
+
 # XCode
 #export CC=/usr/local/bin/gcc-4.2
 #export CPPFLAGS=-I/opt/X11/include
@@ -42,8 +44,6 @@ export LANG=en_US.UTF-8
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vi'
-else
-  export EDITOR=/usr/local/Cellar/macvim/7.4-73/bin/vim
 fi
 
 plugins=(git bundler osx ruby rails brew cap gem rake ssh-agent xcode tmux)

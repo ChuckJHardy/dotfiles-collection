@@ -31,13 +31,7 @@ Bundle 'rodjek/vim-puppet'
 set shell=/bin/sh
 set term=xterm-256color
 set background=dark
-
-hi StatusLineNC cterm=NONE ctermfg=1
-hi StatusLine cterm=NONE ctermfg=2
-hi TabLine cterm=NONE ctermbg=NONE ctermfg=1 gui=NONE
-hi TabLineFill cterm=NONE ctermbg=NONE ctermfg=1 gui=NONE
-hi TabLineSel ctermfg=2
-hi VertSplit cterm=NONE ctermfg=2 gui=NONE
+colorscheme solarized
 
 set number
 set expandtab
