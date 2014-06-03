@@ -21,7 +21,7 @@
   graph = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(blue)<%an>%Creset' --abbrev-commit --date=relative
   pretty = log --oneline --graph --decorate --all 
 [core]
-  excludesfile = ~/.gitignore
+	excludesfile = ~/.gitignore_global
   autocrlf = input
 [push]
   default = tracking
