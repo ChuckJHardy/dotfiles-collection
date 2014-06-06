@@ -5,7 +5,7 @@ alias e="$EDITOR"
 alias be="bundle exec"
 
 # Tmux
-alias tmux="TERM=screen-256color-bce tmux"
+alias tmux="TERM=screen-256color-bce tmux -2"
 alias t='tmux'
 
 # Browser

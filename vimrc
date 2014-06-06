@@ -136,3 +136,4 @@ let NERDTreeMouseMode = 1
 let NERDTreeIgnore = ['.vim$', '\~$', '.*\.pyc$', 'pip-log\.txt$', 'whoosh_index', 'xapian_index', '.*.pid', 'monitor.py', '.*-fixtures-.*.json', '.*\.o$', 'db.db', 'tags.bak', 'tags']
 
 let jshint2_save = 1
+let g:solarized_termcolors=16
