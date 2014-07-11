@@ -15,6 +15,8 @@ Bundle 'othree/html5.vim'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-commentary'
 Bundle 'tpope/vim-sensible'
+Bundle 'tpope/vim-repeat'
+Bundle 'tpope/vim-surround'
 Bundle 'epmatsw/ag.vim'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-rails'
@@ -122,8 +124,8 @@ let g:ctrlp_mruf_max = 250
 nnoremap <c-b> :CtrlPBuffer<cr>
 nnoremap <c-f> :CtrlPMRU<cr>
 
-noremap  <F2> :NERDTreeToggle<cr>
-inoremap <F2> <esc>:NERDTreeToggle<cr>
+noremap  <F1> :NERDTreeToggle<cr>
+inoremap <F1> <esc>:NERDTreeToggle<cr>
 map :where :NERDTreeFind<cr>
 au Filetype nerdtree setlocal nolist
 let g:NERDTreeWinPos = "left"

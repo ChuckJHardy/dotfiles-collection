@@ -6,3 +6,4 @@ install macvim --override-system-vim
 install ag
 install ctags-exuberant
 install postgresql
+install tree
