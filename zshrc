@@ -14,8 +14,14 @@ HIST_STAMPS="dd.mm.yyyy"
 # Compilation flags
 export ARCHFLAGS="-arch x86_64"
 
+# Android
+export ANDROID_HOME=/usr/local/opt/android-sdk
+
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
+
+export BRIDGE_DEV_BOX_MEM_SIZE=4096
+export BRIDGE_DEV_BOX_NUMBER_OF_CORES=2
 
 export RUBY_GC_HEAP_INIT_SLOTS=1000000
 export RUBY_HEAP_SLOTS_INCREMENT=1000000
