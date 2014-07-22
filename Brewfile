@@ -1,4 +1,5 @@
 install zsh 
+install cloc
 install wget
 install tmux
 install reattach-to-user-namespace

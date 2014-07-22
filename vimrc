@@ -29,6 +29,7 @@ Bundle 'scrooloose/syntastic'
 Bundle 'scrooloose/nerdtree'
 Bundle 'skalnik/vim-vroom'
 Bundle 'rodjek/vim-puppet'
+Bundle 'airblade/vim-gitgutter'
 
 set shell=/bin/sh
 set term=xterm-256color
