@@ -30,6 +30,8 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'skalnik/vim-vroom'
 Bundle 'rodjek/vim-puppet'
 Bundle 'airblade/vim-gitgutter'
+Bundle 'majutsushi/tagbar'
+Bundle 'bling/vim-airline'
 
 set shell=/bin/sh
 set term=xterm-256color
@@ -140,3 +142,7 @@ let NERDTreeIgnore = ['.vim$', '\~$', '.*\.pyc$', 'pip-log\.txt$', 'whoosh_index
 
 let jshint2_save = 1
 let g:solarized_termcolors=16
+
+nmap <F2> :TagbarToggle<CR>
+
+let g:airline_powerline_fonts = 1

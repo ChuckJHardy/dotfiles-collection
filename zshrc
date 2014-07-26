@@ -52,7 +52,7 @@ if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vi'
 fi
 
-plugins=(git bundler osx ruby rails brew cap gem rake ssh-agent xcode tmux)
+plugins=(git bundler osx ruby rails brew cap gem rake ssh-agent xcode tmux rvm)
 
 source $ZSH/oh-my-zsh.sh
 unsetopt correct_all
@@ -61,6 +61,7 @@ unsetopt correct_all
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 

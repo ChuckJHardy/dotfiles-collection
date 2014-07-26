@@ -8,3 +8,5 @@ install ag
 install ctags-exuberant
 install postgresql
 install tree
+install autojump
+install tig
