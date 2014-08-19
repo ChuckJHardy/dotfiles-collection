@@ -146,3 +146,5 @@ let g:solarized_termcolors=16
 nmap <F2> :TagbarToggle<CR>
 
 let g:airline_powerline_fonts = 1
+
+let syntastic_mode_map = { 'passive_filetypes': ['html'] }

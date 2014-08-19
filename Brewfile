@@ -10,3 +10,4 @@ install postgresql
 install tree
 install autojump
 install tig
+install lynx
