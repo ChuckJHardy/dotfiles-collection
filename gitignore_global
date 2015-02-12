@@ -1,2 +1,7 @@
 *.sublime-project
 *.log
+.envrc
+.idea
+.DS_Store
+.bundle
+*.sublime-workspace

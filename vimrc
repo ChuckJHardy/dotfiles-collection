@@ -17,6 +17,7 @@ Bundle 'tpope/vim-commentary'
 Bundle 'tpope/vim-sensible'
 Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-cucumber'
 Bundle 'epmatsw/ag.vim'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-rails'
@@ -31,7 +32,9 @@ Bundle 'skalnik/vim-vroom'
 Bundle 'rodjek/vim-puppet'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'majutsushi/tagbar'
-Bundle 'bling/vim-airline'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'ConradIrwin/vim-bracketed-paste'
+Bundle 'editorconfig/editorconfig-vim'
 
 set shell=/bin/sh
 set term=xterm-256color
@@ -144,7 +147,5 @@ let jshint2_save = 1
 let g:solarized_termcolors=16
 
 nmap <F2> :TagbarToggle<CR>
-
-let g:airline_powerline_fonts = 1
 
 let syntastic_mode_map = { 'passive_filetypes': ['html'] }
