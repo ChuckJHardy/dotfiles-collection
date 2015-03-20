@@ -32,7 +32,7 @@ set-window-option -g clock-mode-colour green #green
 
 # custom status bar
 set-option -g status-position bottom
-set -g status-right "CFBK | %a %m-%d %H:%M"
+set -g status-right "Focus | %a %m-%d %H:%M"
 
 # enable copy-paste http://goo.gl/DN82E
 # enable RubyMotion http://goo.gl/WDlCy
