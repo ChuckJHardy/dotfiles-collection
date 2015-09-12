@@ -34,6 +34,7 @@ Bundle 'majutsushi/tagbar'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'ConradIrwin/vim-bracketed-paste'
 Bundle 'editorconfig/editorconfig-vim'
+Bundle 'mattn/emmet-vim'
 
 set shell=/bin/sh
 set term=xterm-256color
@@ -100,6 +101,7 @@ if has("autocmd")
   au FileType make set noexpandtab
   au BufRead,BufNewFile *.{md,markdown,mdown,mkd,mkdn,txt} setf markdown
   au BufNewFile,BufRead *.json set ft=javascript
+  au BufNewFile,BufRead *.es6 set ft=javascript
 
   augroup RubyShenanigans
     au!

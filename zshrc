@@ -29,7 +29,7 @@ export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
 export RUBY_GC_MALLOC_LIMIT=100000000
 export RUBY_HEAP_FREE_MIN=500000
 
-export EDITOR=/usr/local/Cellar/macvim/HEAD/bin/vim
+export EDITOR=/usr/local/Cellar/macvim/7.4-76/bin/vim
 
 # XCode
 #export CC=/usr/local/bin/gcc-4.2
@@ -52,7 +52,7 @@ if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vi'
 fi
 
-plugins=(git bundler osx ruby rails brew cap gem rake ssh-agent xcode tmux rbenv)
+plugins=(git bundler osx ruby rails brew cap gem rake ssh-agent xcode tmux rvm)
 
 source $ZSH/oh-my-zsh.sh
 unsetopt correct_all
@@ -64,14 +64,13 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
-eval "$(direnv hook $0)"
+eval "$(direnv hook zsh)"
 
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
-export PATH="$HOME/.rbenv/bin:$PATH"
 
 export GROOVY_HOME=/usr/local/opt/groovy/libexec
 export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
 
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting

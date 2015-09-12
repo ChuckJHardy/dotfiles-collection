@@ -1,6 +1,9 @@
 # Unix
 alias e="$EDITOR"
 
+# Docker Toolkit
+alias dockert="/Applications/Docker/Docker\ Quickstart\ Terminal.app/Contents/Resources/Scripts/start.sh"
+
 # Bundler
 alias be="bundle exec"
 

@@ -1,6 +1,7 @@
 *.sublime-project
 *.log
 .envrc
+.env
 .idea
 .DS_Store
 .bundle
