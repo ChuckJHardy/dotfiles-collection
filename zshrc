@@ -11,29 +11,8 @@ ZSH_THEME="robbyrussell"
 # The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
 HIST_STAMPS="dd.mm.yyyy"
 
-# Compilation flags
-export ARCHFLAGS="-arch x86_64"
+export EDITOR=vim
 
-# Android
-export ANDROID_HOME=/usr/local/opt/android-sdk
-
-# ssh
-# export SSH_KEY_PATH="~/.ssh/dsa_id"
-
-export BRIDGE_DEV_BOX_MEM_SIZE=4096
-export BRIDGE_DEV_BOX_NUMBER_OF_CORES=2
-
-export RUBY_GC_HEAP_INIT_SLOTS=1000000
-export RUBY_HEAP_SLOTS_INCREMENT=1000000
-export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
-export RUBY_GC_MALLOC_LIMIT=100000000
-export RUBY_HEAP_FREE_MIN=500000
-
-export EDITOR=/usr/local/Cellar/macvim/7.4-76/bin/vim
-
-# XCode
-#export CC=/usr/local/bin/gcc-4.2
-#export CPPFLAGS=-I/opt/X11/include
 
 # Aliases
 if [ -e "$HOME/.aliases" ]; then
@@ -52,25 +31,17 @@ if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vi'
 fi
 
-plugins=(git bundler osx ruby rails brew cap gem rake ssh-agent xcode tmux rvm)
+plugins=(git bundler ruby rails gem rake ssh-agent tmux rvm)
 
 source $ZSH/oh-my-zsh.sh
 unsetopt correct_all
 
 # Customize to your needs...
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:$PATH"
 
-[[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
-
-export NVM_DIR=~/.nvm
-source $(brew --prefix nvm)/nvm.sh
 eval "$(direnv hook zsh)"
 
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-
-export GROOVY_HOME=/usr/local/opt/groovy/libexec
-export NODE_PATH=$NODE_PATH:/usr/local/lib/node_modules
-
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+export NVM_DIR="/home/chuckjhardy/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm

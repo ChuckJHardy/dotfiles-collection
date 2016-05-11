@@ -10,6 +10,5 @@ task :link do
     end
   end
 
-  `git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle`
-  `ln -s "$(brew --prefix)/Library/Contributions/brew_zsh_completion.zsh" /usr/local/share/zsh/site-functions`
+  `git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
 end

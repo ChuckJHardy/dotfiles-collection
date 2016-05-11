@@ -1,45 +1,45 @@
-let mapleader = ","
-
 if executable('/bin/zsh')
   set shell=/bin/zsh
 endif
 
-filetype off
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
-Bundle 'gmarik/vundle'
-Bundle 'vim-scripts/bufkill.vim'
-Bundle 'kien/ctrlp.vim'
-Bundle 'othree/html5.vim'
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-commentary'
-Bundle 'tpope/vim-sensible'
-Bundle 'tpope/vim-repeat'
-Bundle 'tpope/vim-surround'
-Bundle 'tpope/vim-cucumber'
-Bundle 'epmatsw/ag.vim'
-Bundle 'vim-ruby/vim-ruby'
-Bundle 'tpope/vim-rails'
-Bundle 'ervandew/supertab'
-Bundle 'nono/vim-handlebars'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'elzr/vim-json'
-Bundle 'scrooloose/syntastic'
-Bundle 'scrooloose/nerdtree'
-Bundle 'skalnik/vim-vroom'
-Bundle 'rodjek/vim-puppet'
-Bundle 'airblade/vim-gitgutter'
-Bundle 'majutsushi/tagbar'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'ConradIrwin/vim-bracketed-paste'
-Bundle 'editorconfig/editorconfig-vim'
-Bundle 'mattn/emmet-vim'
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'vim-scripts/bufkill.vim'
+Plugin 'kien/ctrlp.vim'
+Plugin 'othree/html5.vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-commentary'
+Plugin 'tpope/vim-sensible'
+Plugin 'tpope/vim-repeat'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-cucumber'
+Plugin 'epmatsw/ag.vim'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'tpope/vim-rails'
+Plugin 'ervandew/supertab'
+Plugin 'nono/vim-handlebars'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'elzr/vim-json'
+Plugin 'scrooloose/syntastic'
+Plugin 'scrooloose/nerdtree'
+Plugin 'skalnik/vim-vroom'
+Plugin 'rodjek/vim-puppet'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'majutsushi/tagbar'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'ConradIrwin/vim-bracketed-paste'
+Plugin 'editorconfig/editorconfig-vim'
+Plugin 'mattn/emmet-vim'
 
+call vundle#end()
+
+let mapleader = ","
 set shell=/bin/sh
 set term=xterm-256color
 set background=dark
-colorscheme solarized
+" colorscheme solarized
 
 set number
 set expandtab
