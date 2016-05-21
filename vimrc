@@ -1,3 +1,5 @@
+set shell=/bin/sh
+
 if executable('/bin/zsh')
   set shell=/bin/zsh
 endif
@@ -32,11 +34,12 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'ConradIrwin/vim-bracketed-paste'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'mattn/emmet-vim'
+Plugin 'szw/vim-tags'
 
 call vundle#end()
 
 let mapleader = ","
-set shell=/bin/sh
+
 set term=xterm-256color
 set background=dark
 " colorscheme solarized
@@ -159,3 +162,5 @@ let g:solarized_termcolors=16
 nmap <F2> :TagbarToggle<CR>
 
 let syntastic_mode_map = { 'passive_filetypes': ['html'] }
+
+let g:vim_tags_auto_generate = 1

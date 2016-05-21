@@ -12,7 +12,8 @@ ZSH_THEME="robbyrussell"
 HIST_STAMPS="dd.mm.yyyy"
 
 export EDITOR=vim
-
+export SSL_CERT_DIR=/usr/lib/ssl/certs
+export SSL_CERT_FILE=/usr/lib/ssl/certs/ca-certificates.crt
 
 # Aliases
 if [ -e "$HOME/.aliases" ]; then
@@ -39,9 +40,10 @@ unsetopt correct_all
 # Customize to your needs...
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:$PATH"
 
+eval "$(rbenv init -)"
 eval "$(direnv hook zsh)"
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export PATH="$HOME/.rbenv/bin:$PATH"
 
 export NVM_DIR="/home/chuckjhardy/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
