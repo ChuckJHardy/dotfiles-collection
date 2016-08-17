@@ -31,7 +31,7 @@
 [format]
   pretty = %Cblue%h%Creset %Cgreen[%ar]%Creset (%an) %s
 [user]
-	name = Charles J Hardy
+	name = Chuck J Hardy
 	email = chuckjhardy@gmail.com
 [credential]
 	helper = osxkeychain
