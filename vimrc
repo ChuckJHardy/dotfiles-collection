@@ -36,6 +36,7 @@ Plugin 'ConradIrwin/vim-bracketed-paste'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'mattn/emmet-vim'
 Plugin 'szw/vim-tags'
+Plugin 'rizzatti/dash.vim'
 
 call vundle#end()
 

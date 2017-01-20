@@ -11,7 +11,7 @@ ZSH_THEME="robbyrussell"
 # The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
 HIST_STAMPS="dd.mm.yyyy"
 
-export EDITOR=/usr/local/Cellar/macvim/7.4-104/bin/vim
+export EDITOR=/usr/local/Cellar/macvim/7.4-104_1/bin/vim
 #export SSL_CERT_DIR=/usr/lib/ssl/certs
 #export SSL_CERT_FILE=/usr/lib/ssl/certs/ca-certificates.crt
 
@@ -48,3 +48,7 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 #export NVM_DIR="/home/chuckjhardy/.nvm"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+export RUBY_GC_MALLOC_LIMIT=1000000000
+export RUBY_GC_HEAP_FREE_SLOTS=500000
+export RUBY_GC_HEAP_INIT_SLOTS=40000

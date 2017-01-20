@@ -6,3 +6,4 @@
 .DS_Store
 .bundle
 *.sublime-workspace
+.swp
