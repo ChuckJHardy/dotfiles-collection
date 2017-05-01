@@ -26,25 +26,29 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'elzr/vim-json'
 Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdtree'
-Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plugin 'Xuyuanp/nerdtree-git-plugin' " A plugin of NERDTree showing git status flags. Works with the LATEST version of NERDTree.
 Plugin 'skalnik/vim-vroom'
 Plugin 'rodjek/vim-puppet'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'majutsushi/tagbar'
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'ConradIrwin/vim-bracketed-paste'
-Plugin 'editorconfig/editorconfig-vim'
-Plugin 'mattn/emmet-vim'
-Plugin 'szw/vim-tags'
-Plugin 'rizzatti/dash.vim'
+Plugin 'ConradIrwin/vim-bracketed-paste' " vim-bracketed-paste enables transparent pasting into vim. (i.e. no more :set paste!)
+Plugin 'mattn/emmet-vim' " is a vim plug-in which provides support for expanding abbreviations similar to emmet.
+" Plugin 'szw/vim-tags' " The Ctags generator for Vim
+" Plugin 'rizzatti/dash.vim'
+Plugin 'itchyny/lightline.vim'
+" Plugin 'dart-lang/dart-vim-plugin' " Syntax highlighting for Dart in Vim
 
 call vundle#end()
 
 let mapleader = ","
 
-set term=xterm-256color
+if !has('nvim')
+  set term=xterm-256color
+endif
+
 set background=dark
-" colorscheme solarized
+colorscheme solarized
 
 set number
 set expandtab
@@ -115,7 +119,7 @@ if has("autocmd")
   augroup END
 endif
 
-" Specify the behavior when switching between buffers 
+" Specify the behavior when switching between buffers
 try
   set switchbuf=useopen,usetab,newtab
   set stal=2
@@ -165,4 +169,8 @@ nmap <F2> :TagbarToggle<CR>
 
 let syntastic_mode_map = { 'passive_filetypes': ['html'] }
 
-let g:vim_tags_auto_generate = 1
+" let g:vim_tags_auto_generate = 1
+
+" let g:lightline = {
+"      \ 'colorscheme': 'solarized',
+"      \ }

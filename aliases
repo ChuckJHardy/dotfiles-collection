@@ -1,5 +1,6 @@
 # Unix
 alias e="$EDITOR"
+alias ee="nvim"
 
 # Docker Toolkit
 alias dockert="/Applications/Docker/Docker\ Quickstart\ Terminal.app/Contents/Resources/Scripts/start.sh"
