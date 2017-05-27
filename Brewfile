@@ -11,3 +11,4 @@ install tree
 install autojump
 install tig
 install lynx
+install antigen

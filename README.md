@@ -1,6 +1,12 @@
 ## DotFiles
-    
-    wget --no-check-certificate https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh; rm ~/.zshrc
+
+### Powerline Fonts
+
+[Download](https://github.com/powerline/fonts)
+
+![iTerm 2 Example](./iterm2-powerline-font-settings.png)
+
+### Install
 
     # Install Macvim
     brew install macvim --custom-icons --override-system-vim --with-lua --with-luajit --with-cscope
