@@ -47,8 +47,8 @@ if !has('nvim')
   set term=xterm-256color
 endif
 
-set background=dark
-colorscheme solarized
+"set background=dark
+"colorscheme solarized
 
 set number
 set expandtab

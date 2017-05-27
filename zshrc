@@ -1,5 +1,5 @@
 ZSH=$HOME/.oh-my-zsh
-ZSH_THEME="robbyrussell"
+ZSH_THEME="hyperzsh"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -40,10 +40,7 @@ unsetopt correct_all
 # Customize to your needs...
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:$PATH"
 
-eval "$(rbenv init -)"
-eval "$(direnv hook zsh)"
-
-export PATH="$HOME/.rbenv/bin:$PATH"
+# export PATH="$HOME/.rbenv/bin:$PATH"
 
 #export NVM_DIR="/home/chuckjhardy/.nvm"
 export NVM_DIR="$HOME/.nvm"
