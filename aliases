@@ -13,10 +13,6 @@ alias df="df -h"
 alias sed="sed -E" # Use modern regexps for sed, i.e. "(one|two)", not "\(one\|two\)"
 alias curl-debug="command curl -vso /dev/null -H Fastly-debug:1" # Just print request/response headers
 alias curl="curl --verbose"
-# The `-g` flag means "global", and means that it can go anywhere in a command
-# line and it will be preprocessed in, unlike "regular" aliases.
-alias -g G="| grep "
-alias -g ONE="| awk '{ print \$1}'"
 
 # Use modern regexps for grep, and do show color when `grep` is the final
 # command, but don't when piping to something else, because the added color

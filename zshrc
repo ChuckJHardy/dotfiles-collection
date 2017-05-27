@@ -16,11 +16,13 @@ antigen bundle docker
 antigen bundle git
 antigen bundle gradle
 antigen bundle osx
+antigen bundle rails
 antigen bundle ssh-agent
 antigen bundle thefuck
 antigen bundle tmux
 antigen bundle vi-mode
 antigen bundle chucknorris
+antigen bundle common-aliases
 
 antigen bundle unixorn/autoupdate-antigen.zshplugin
 antigen bundle zsh-users/zsh-autosuggestions
@@ -66,6 +68,8 @@ unsetopt correct_all
 
 # Customize to your needs...
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:$PATH"
+
+eval "$(rbenv init -)"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
