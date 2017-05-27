@@ -12,3 +12,4 @@ install autojump
 install tig
 install lynx
 install antigen
+install fortune

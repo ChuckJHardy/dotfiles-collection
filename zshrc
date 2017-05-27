@@ -20,6 +20,7 @@ antigen bundle ssh-agent
 antigen bundle thefuck
 antigen bundle tmux
 antigen bundle vi-mode
+antigen bundle chucknorris
 
 antigen bundle unixorn/autoupdate-antigen.zshplugin
 antigen bundle zsh-users/zsh-autosuggestions
