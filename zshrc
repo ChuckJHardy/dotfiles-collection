@@ -4,6 +4,9 @@ ZSH=$HOME/.oh-my-zsh
 # http://antigen.sharats.me/#installation
 source /usr/local/share/antigen/antigen.zsh
 
+# https://github.com/denysdovhan/spaceship-zsh-theme#vi-mode-vi_mode
+export RPS1="%{$reset_color%}"
+
 antigen use oh-my-zsh
 
 antigen bundle aws
@@ -16,6 +19,7 @@ antigen bundle osx
 antigen bundle ssh-agent
 antigen bundle thefuck
 antigen bundle tmux
+antigen bundle vi-mode
 
 antigen bundle unixorn/autoupdate-antigen.zshplugin
 antigen bundle zsh-users/zsh-autosuggestions
